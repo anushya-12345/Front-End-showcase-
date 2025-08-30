@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Front-End Showcase</title>
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+        /* Card hover effect */
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        /* Card image rounded corners */
+        .card-image img {
+            border-radius: 5px;
+        }
+        /* Section spacing */
+        .section {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        /* Center grid card content */
+        .card-content p {
+            text-align: center;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-centered">Front-End Showcase</h1>
+
+            <!-- Task 1: Single Card Component -->
+            <h2 class="subtitle mt-5 has-text-centered">1. Responsive Card Component</h2>
+            <div class="card" style="max-width: 400px; margin: 20px auto;">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="https://picsum.photos/400/300?random=1" alt="Responsive Card Image">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content has-text-centered">
+                        This is a responsive card built using Bulma. The card adjusts nicely for different screen sizes and showcases modern web design.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Task 2: Responsive Grid Layout -->
+            <h2 class="subtitle mt-6 has-text-centered">2. Responsive Grid Layout</h2>
+            <div class="columns is-multiline">
+                <div class="column is-12-mobile is-6-tablet is-3-desktop">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://picsum.photos/150/150?random=2" alt="Grid Image 1">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p>Card 1</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-12-mobile is-6-tablet is-3-desktop">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://picsum.photos/150/150?random=3" alt="Grid Image 2">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p>Card 2</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-12-mobile is-6-tablet is-3-desktop">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://picsum.photos/150/150?random=4" alt="Grid Image 3">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p>Card 3</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-12-mobile is-6-tablet is-3-desktop">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://picsum.photos/150/150?random=5" alt="Grid Image 4">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p>Card 4</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
